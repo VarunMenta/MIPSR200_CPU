@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Apr 26 19:59:59 2024
+| Host         : VM-2019 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Complete_MIPS_control_sets_placed.rpt
+| Design       : Complete_MIPS
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    36 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              85 |           36 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              47 |           14 |
+| Yes          | No                    | No                     |            1067 |          309 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               7 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------+------------------+------------------+----------------+--------------+
+|    Clock Signal   |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+----------------------------------+------------------+------------------+----------------+--------------+
+|  button1/a1/SR[0] |                                  |                  |                1 |              2 |         2.00 |
+|  a7/out[0]        |                                  | RST_IBUF         |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/E[0]                | RST_IBUF         |                3 |              7 |         2.33 |
+|  CLK_IBUF_BUFG    | CPU/opsave                       |                  |                6 |             11 |         1.83 |
+|  CLK_IBUF_BUFG    |                                  | RST_IBUF         |                7 |             22 |         3.14 |
+|  CLK_IBUF_BUFG    |                                  | button1/a1/SR[0] |                7 |             25 |         3.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[0][31]_i_1_n_0  |                  |               10 |             32 |         3.20 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[10][31]_i_1_n_0 |                  |               11 |             32 |         2.91 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[14][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[21][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[24][31]_i_1_n_0 |                  |               13 |             32 |         2.46 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[28][31]_i_1_n_0 |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[11][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[17][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[15][31]_i_1_n_0 |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[19][31]_i_1_n_0 |                  |               12 |             32 |         2.67 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[22][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[12][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[16][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[27][31]_i_1_n_0 |                  |               11 |             32 |         2.91 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[29][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[30][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[26][31]_i_1_n_0 |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[6][31]_i_1_n_0  |                  |                6 |             32 |         5.33 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[13][31]_i_1_n_0 |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[7][31]_i_1_n_0  |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[25][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[23][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[31][31]_i_1_n_0 |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[20][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[18][31]_i_1_n_0 |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[2][31]_i_1_n_0  |                  |                6 |             32 |         5.33 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[3][31]_i_1_n_0  |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[4][31]_i_1_n_0  |                  |                7 |             32 |         4.57 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[8][31]_i_1_n_0  |                  |                9 |             32 |         3.56 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[9][31]_i_1_n_0  |                  |               10 |             32 |         3.20 |
+|  CLK_IBUF_BUFG    | CPU/alu_result_save[31]_i_1_n_0  |                  |               29 |             32 |         1.10 |
+|  CLK_IBUF_BUFG    | CPU/instr                        |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    | CPU/Register/REG[5][31]_i_1_n_0  |                  |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG    |                                  |                  |               35 |             83 |         2.37 |
++-------------------+----------------------------------+------------------+------------------+----------------+--------------+
+
+
