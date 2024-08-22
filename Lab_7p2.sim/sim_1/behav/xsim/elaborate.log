@@ -1,0 +1,22 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/ECE316/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MIPS_Testbench_behav xil_defaultlib.MIPS_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bounce_clk
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.hexto7segment
+Compiling module xil_defaultlib.display_clk
+Compiling module xil_defaultlib.time_mux_state_machine
+Compiling module xil_defaultlib.Complete_MIPS
+Compiling module xil_defaultlib.MIPS_Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MIPS_Testbench_behav

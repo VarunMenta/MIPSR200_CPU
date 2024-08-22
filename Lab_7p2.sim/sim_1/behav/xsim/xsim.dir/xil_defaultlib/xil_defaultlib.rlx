@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sim_1/new/tb.v,1714179145,verilog,,,,MIPS_Testbench,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/ECE460M/lab7.v,1714178386,verilog,,D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/time_mux_state_machine.v,,Complete_MIPS;MIPS;Memory;REG,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/debouncer.v,1709184276,verilog,,D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/display_clk.v,,bounce_clk;debouncer,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/display_clk.v,1701049579,verilog,,D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/hexto7segment.v,,display_clk,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/hexto7segment.v,1714175395,verilog,,D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/ECE460M/lab7.v,,hexto7segment,,,,,,,,
+D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sources_1/imports/new/time_mux_state_machine.v,1708017755,verilog,,D:/ECE460M/Labs/Lab_7p2/Lab_7p2.srcs/sim_1/new/tb.v,,time_mux_state_machine,,,,,,,,
